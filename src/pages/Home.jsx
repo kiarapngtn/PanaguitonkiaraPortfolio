@@ -25,7 +25,12 @@ const Home = () => {
                 <strong className="main-name"> Kiara Panaguiton</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div style={{ 
+                padding: 50, 
+                textAlign: "left",
+                position: "relative",
+                zIndex: 1
+              }}>
                 <Type />
               </div>
             </Col>
@@ -35,7 +40,7 @@ const Home = () => {
                 src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxHeight: "1000x" , marginTop: '', transform: 'translateY(-20px),'}}
+                style={{ maxHeight: "1000px", marginTop: '', transform: 'translateY(-20px)'}}
               />
             </Col>
           </Row>

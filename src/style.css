@@ -251,6 +251,8 @@ html {
     background-size: cover !important;
     width: 100%;
     height: 100%;
+    z-index: 1; /* ensure particles sit behind main content */
+    pointer-events: none; /* allow clicks through the particle canvas */
   }
   
   .home-header {
@@ -259,7 +261,7 @@ html {
   
   .home-section {
     position: relative;
-    z-index: -1;
+    z-index: 0; /* ensure section sits above page background but below content */
     background-image: var(--image-gradient), url(./assets/home-bg.jpg);
     background-position: top center;
     background-repeat: no-repeat;
@@ -271,6 +273,18 @@ html {
     padding: 9rem 0 2rem !important;
     color: whitesmoke;
     text-align: left;
+    position: relative; /* make sure content can stack above particles */
+    z-index: 3;
+  }
+
+  /* ensure preloader gets removed visually when not loading */
+  #preloader {
+    transition: opacity 300ms ease, visibility 300ms ease;
+  }
+  #preloader-none {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
   }
   
   .heading {
@@ -288,24 +302,21 @@ html {
   }
   
   .Typewriter__wrapper {
-    font-size: 2.2em !important;
-    color: #7500fa!important;
-    /* color: #be6adf !important; */
-    font-weight: 600 !important;
-  }
+      font-size: 1.6em !important;
+      color: #7500fa !important;
+      font-weight: 600 !important;
+      display: inline-block !important;
+    }
   .Typewriter__cursor {
     font-size: 2.4em !important;
     color: #7500fa !important;
+    display: inline-block !important;
   }
   
   @media (max-width: 767px) {
     .Typewriter__wrapper {
-      font-size: 1.4em !important;
+      font-size: 1.2em !important;
       font-weight: 500 !important;
-      position: absolute !important;
-    }
-    .Typewriter__cursor {
-      display: none !important;
     }
   }
   

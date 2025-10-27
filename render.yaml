@@ -1,0 +1,7 @@
+services:
+  - type: static
+    name: panaguitonkiara-portfolio
+    env: static
+    branch: main
+    buildCommand: "npm install && npm run build"
+    staticPublishPath: build
