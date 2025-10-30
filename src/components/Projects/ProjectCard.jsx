@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
+
 
 const ProjectCard = (props) => {
   return (
@@ -37,47 +36,9 @@ const ProjectCard = (props) => {
         <Card.Text style={{ textAlign: "justify",fontSize:"15px" }}>
           {props.description}
         </Card.Text>
-        <Button
-          variant="primary"
-          href={props.ghLink}
-          target="_blank"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            alignContent: "flex-end",
-            textAlign: "center",
-            position: "relative",
-            bottom: "0px",
-          }}
-        >
-          {props.isBlog ? "Blog" : "Live Demo"}
-        </Button>
-        {"\n"}
-        {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{
-              marginTop: "10px",
-              display: "flex",
-              justifyContent: "center",
-              alignContent: "flex-end",
-              alignItems: "center",
-              textAlign: "center",
-              position: "static",
-              bottom: "0px",
-            }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
+    
+        
+       
       </Card.Body>
     </Card>
   );

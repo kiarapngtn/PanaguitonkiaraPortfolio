@@ -19,7 +19,7 @@ const Projects = () => {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
-          {/* Project 1: Awesome To Do's */}
+         
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={lift}
@@ -30,7 +30,7 @@ const Projects = () => {
             />
          </Col>
 
-          {/* Project 2: New Project Placeholder */}
+          
           <Col md={4} className="project-card">
             <ProjectCard
 
@@ -42,7 +42,7 @@ const Projects = () => {
             />
          </Col>
 
-          {/* Project 3: Another New Project Placeholder */}
+          
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={newProjectImage2} 
