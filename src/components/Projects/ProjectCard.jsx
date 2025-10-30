@@ -51,7 +51,7 @@ const ProjectCard = (props) => {
             bottom: "0px",
           }}
         >
-          {props.isBlog ? "Blog" : ""}
+          {props.isBlog ? "Blog" : "Live Demo"}
         </Button>
         {"\n"}
         {"\n"}

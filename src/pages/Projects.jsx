@@ -38,7 +38,7 @@ const Projects = () => {
               isBlog={false}
               title="Succor" 
               description="Succor is a web-based platform designed to help upcoming and undecided college students choose the right course for their future. It provides personalized guidance, course information, and career insights to make decision-making easier and more informed. Through Succor, students can explore different academic paths and discover which course best fits their interests and goals."
-              ghLink="Your GitHub or Live Demo Link Here"
+              ghLink="https://www.figma.com/design/hV2AFXr9V9IM6huJhyaBYA/Succor?t=BPWPR6yaTJUPAOmo-0"
             />
          </Col>
 
@@ -49,7 +49,7 @@ const Projects = () => {
               isBlog={false}
               title="EmerGo - Emergency App" 
               description="Emergo is a smart and reliable emergency response app designed to keep you safe in any situation. With just one tap, you can alert authorities, share your real-time location, and notify your trusted contacts instantly. Whether it’s an accident, health issue, or natural disaster, Emergo helps you stay calm and respond fast."
-              ghLink="Your GitHub or Live Demo Link Here"
+              ghLink="https://www.figma.com/design/K0IurhbIFm1u8aljUeozdH/Emergency-Call?t=u6r58Cg0hDu1QrgN-0"
             />
          </Col>
 
