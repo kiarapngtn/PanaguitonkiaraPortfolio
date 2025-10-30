@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-
+// import Button from "react-bootstrap/Button"; // Button is no longer needed
+// import { CgWebsite } from "react-icons/cg"; // Icon is no longer needed
 
 const ProjectCard = (props) => {
   return (
@@ -36,9 +37,9 @@ const ProjectCard = (props) => {
         <Card.Text style={{ textAlign: "justify",fontSize:"15px" }}>
           {props.description}
         </Card.Text>
-    
+        {/* The button code that was here has been removed */}
         
-       
+        {/* The conditional demo button code that was here has also been removed */}
       </Card.Body>
     </Card>
   );
